@@ -41,18 +41,18 @@ if (choice === "mountains")
     if (torchChoice === "yes" && hasTorch){
       console.log("You safely navigate through the dark mountains.");
     }
-    else if (torchChoice == "no" || (!hasTorch)) {
+    else if (torchChoice === "no" || (!hasTorch)) {
       console.log("It's too dark to proceed. Better stay and start tomorrow");
       const tentChoice = readline.question("Do you have lightweight tent?");
-      if (tentChoice == "yes" && hasTent){
+      if (tentChoice === "yes" && hasTent){
         console.log("Set up the tent and then spend the night");
       }
-      else if (tentChoice == "no" || !hasTent){
+      else if (tentChoice === "no" || !hasTent){
         const sleepingBagChoice = readline.question("Do you have sleeping Bag?");
-        if (sleepingBagChoice == "yes" && hasSleepingBag){
+        if (sleepingBagChoice === "yes" && hasSleepingBag){
           console.log("Sleep and start tomorrow");
         }
-        else if (sleepingBagChoice == "no" || !hasSleepingBag) {
+        else if (sleepingBagChoice === "no" || !hasSleepingBag) {
           console.log("Go to safe place and stay calm");
 
         }
